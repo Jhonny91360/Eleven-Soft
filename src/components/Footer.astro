@@ -2,13 +2,11 @@
 import FacebookLogo from "../utils/Icon components/FacebookLogo";
 import InstagramLogo from "../utils/Icon components/InstagramLogo";
 import LinkdlnLogo from "../utils/Icon components/LinkdlnLogo";
-import LoginTag from "./LoginTag.astro";
-import NavBar from "./NavBar";
 ---
 
-<section class="flex items-center justify-around py-4 px-4 bg-white bg-opacity-50 ">
+<section class="flex items-center flex-wrap justify-around py-4 px-4 bg-white bg-opacity-50 ">
     <div class="flex items-center gap-2">
-        <span class="text-[36px] font-bold ">Síguenos en:</span>
+        <span class="text-[24px] md:text-[36px] font-bold ">Síguenos en:</span>
         <InstagramLogo color="#000"/>
         <FacebookLogo color="#000"/>
         <LinkdlnLogo color="#000"/>
@@ -18,5 +16,5 @@ import NavBar from "./NavBar";
         Contáctanos
     </button>
     
-    <span class="text-[36px] font-bold ">Términos y condiciones </span>
+    <span class="text-[24px] md:text-[36px] font-bold ">Términos y condiciones </span>
 </section>

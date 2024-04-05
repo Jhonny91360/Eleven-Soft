@@ -16,14 +16,16 @@ const NavBar=()=>{
     }
   
     return(
-        <section className="flex justify-center overflow-hidden max-w-[900px] h-[60px] rounded-xl mx-auto">
-            {navOptions.map( (item,index)=>{
+        <section className="md:w-full flex flex-col overflow-x-auto md:flex-row justify-normal overflow-hidden md:max-w-[900px] md:h-[60px] rounded-xl mx-auto">
+            {navOptions.map( (item,index,array)=>{
             return(
                 <a 
                 href={`/${item.url}`}
                 key={index}
-                className={`text-[36px] font-bold cursor-pointer px-4 hover:bg-[#75B4A8] hover:text-white relative
+                className={`text-[24px] md:text-[36px] font-bold cursor-pointer px-4 hover:bg-[#75B4A8] hover:text-white relative
                             ${item.isActive?"bg-[#75B4A8] text-white":"bg-[#ffff] text-[#75B4A8]"}
+                            ${index==0?'rounded-l-xl':''}
+                            ${index==array.length-1?'rounded-r-xl':''}
                             `}
                 >
                     {item.title}

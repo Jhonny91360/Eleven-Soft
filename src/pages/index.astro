@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Home from '../components/Home.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<p class="text-black text-6xl  ">Eleven soft - home</p>
-	</main>
+	<section class="w-full h-[80%] overflow-y-auto flex justify-center md:justify-start">
+		<Home />
+	</section>
 </Layout>
 
 <!-- <style>
