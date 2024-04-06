@@ -1,0 +1,55 @@
+---
+import ReviewCard from '../components/ReviewCard.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<section class="w-full min-h-[80%] py-10 px-10 overflow-y-auto flex flex-col md:flex-row md:flex-wrap gap-[100px] justify-center items-center">
+            <p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold">
+                Reseñas
+            </p>
+            <section class="bg-opacity-75 flex flex-col gap-8 p-[25px] rounded-3xl text-[24px] text-white max-w-[800px] font-bold">
+              <ReviewCard  
+                name='Hernan Soto' 
+                image='https://mir-s3-cdn-cf.behance.net/project_modules/1400/d4ad40103067131.5f450dd53ccd1.png' 
+                text=`¡Mi experiencia con ElevenSoft ha sido 
+                excepcional! Su equipo altamente capacitado
+                no solo comprendió nuestras necesidades 
+                específicas, sino que también superó nuestras
+                expectativas con una solución de software
+                personalizada y de vanguardia. Su enfoque 
+                en la calidad y la innovación realmente nos 
+                ayudó a impulsar nuestro negocio al siguiente 
+                nivel. `
+              />
+              <ReviewCard  
+                name='Jeremy Cole' 
+                image='https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/e40b6ea6361a1abe28f32e7910f63b66/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg' 
+                text=`¡Mi experiencia con ElevenSoft ha sido 
+                excepcional! Su equipo altamente capacitado
+                no solo comprendió nuestras necesidades 
+                específicas, sino que también superó nuestras
+                expectativas con una solución de software
+                personalizada y de vanguardia. Su enfoque 
+                en la calidad y la innovación realmente nos 
+                ayudó a impulsar nuestro negocio al siguiente 
+                nivel. `
+              />
+              <ReviewCard  
+                name='Daniela Castillo' 
+                image='https://saramusico.com/wp-content/uploads/2019/04/foto-de-perfil-en-linkedin.jpg' 
+                text=`¡Mi experiencia con ElevenSoft ha sido 
+                excepcional! Su equipo altamente capacitado
+                no solo comprendió nuestras necesidades 
+                específicas, sino que también superó nuestras
+                expectativas con una solución de software
+                personalizada y de vanguardia. Su enfoque 
+                en la calidad y la innovación realmente nos 
+                ayudó a impulsar nuestro negocio al siguiente 
+                nivel. `
+              />
+            </section>
+        </div>
+	</section>
+</Layout>
+
