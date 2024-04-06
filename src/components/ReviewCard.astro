@@ -1,0 +1,21 @@
+---
+interface Props {
+	name: string;
+	image: string;
+	text: string;
+}
+
+const { name, image, text } = Astro.props;
+---
+
+<section class="flex flex-col md:flex-row rounded-2xl hover:border-[2px] hover:border-white">
+    <div class="w-[280px] h-[320px] bg-[#75B4A8] rounded-l-2xl flex items-center justify-center">
+        <div class="flex flex-col items-center justify-center gap-6">
+            <img src={image} alt="" class="w-[150px] h-[150px] rounded-full" onerror="this.onerror=null; this.src='/src/utils/icon/no-image-perfil.jpg';">
+            <label class="mx-auto text-center">{name}</label>
+        </div>
+    </div>
+    <div class="w-[280px] md:w-[380px] h-[320px] flex justify-center items-center rounded-r-2xl text-black text-[16px] p-2 overflow-y-auto bg-white">
+        {text}
+    </div>
+</section>
