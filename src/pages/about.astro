@@ -1,10 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<p class="text-black text-6xl  ">Eleven soft - about</p>
-	</main>
+	<section class="w-full h-[80%] py-10 px-10 overflow-y-auto flex flex-col md:flex-row gap-[100px] justify-center items-center">
+		<p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold bg-re">
+			¿Quiénes somos? 
+		</p>
+		<div class="text-[24px] md:w-[40%] max-w-[800px] max-h-[700px] overflow-y-auto font-bold text-white bg-black opacity-75 p-[25px] md:p-[56px] rounded-2xl">
+			Somos una firma líder en el desarrollo de software, comprometida con la 
+			excelencia y la innovación. 
+			Nuestro equipo diverso de profesionales apasionados colabora 
+			estrechamente para crear soluciones tecnológicas de vanguardia que
+			superan las expectativas del mercado. Desde aplicaciones móviles hasta
+			sistemas empresariales complejos, nos especializamos en ofrecer 
+			productos personalizados y escalables que impulsan el éxito de nuestros
+			clientes en diversos sectores. Con un enfoque en la calidad, la integridad
+			y la adaptabilidad, estamos listos para convertir sus ideas en realidad y 
+			liderar el camino hacia el éxito tecnológico.
+		</div>
+	</section>
 </Layout>
