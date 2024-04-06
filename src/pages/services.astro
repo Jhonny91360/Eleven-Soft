@@ -1,0 +1,64 @@
+---
+import Tecnologies from '../components/Tecnologies.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<section class="w-full min-h-[80%] py-10 px-10 overflow-y-auto flex flex-col gap-[100px] justify-center items-center">
+        <div class="w-full flex flex-col overflow-y-auto md:flex-row gap-[100px] justify-start md:justify-center items-center">
+            <p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold">
+                Servicios
+            </p>
+            <section class="bg-black opacity-75 p-[25px] rounded-3xl text-[24px] text-white md:w-[80%] max-w-[800px] font-bold">
+                <section class="w-full flex flex-col gap-6">
+
+                    <div class="w-full flex justify-between md:items-center gap-2">
+                        <div class="w-[35px] h-[35px] rounded-full border-[1px] border-white  bg-[#75B4A8]">
+                        </div>
+                        <p class="w-[90%]">
+                            Diseñamos soluciones tecnológicas de alta calidad capaces de competir con las tendencias del mercado.
+                        </p>
+                    </div>
+
+                    <div class="w-full flex justify-between md:items-center gap-2">
+                        <div class="w-[35px] h-[35px] rounded-full border-[1px] border-white bg-[#75B4A8]">
+                        </div>
+                        <p class="w-[90%]">
+                            Evaluamos el panorama tecnológico constantemente para ofrecer soluciones innovadoras y efectivas.
+                        </p>
+                    </div>
+
+                    <div class="w-full flex justify-between md:items-center gap-2">
+                        <div class="w-[35px] h-[35px] rounded-full border-[1px] border-white bg-[#75B4A8]">
+                        </div>
+                        <p class="w-[90%]">
+                            Trabajamos de manera cercana con nuestros clientes 
+                            para que el producto final sea totalmente fiel a sus 
+                            expectativas.                    
+                        </p>
+                    </div>
+
+                    <div class="w-full flex justify-between md:items-center gap-2">
+                        <div class="w-[35px] h-[35px] rounded-full border-[1px] border-white bg-[#75B4A8]">
+                        </div>
+                        <p class="w-[90%]">
+                            Realizamos productos capaces de responder al 
+                            crecimiento del negocio a cualquier nivel de operación.                    
+                        </p>
+                    </div>
+
+                    <div class="w-full flex justify-between md:items-center gap-2">
+                        <div class="w-[35px] h-[35px] rounded-full border-[1px] border-white bg-[#75B4A8]">
+                        </div>
+                        <p class="w-[90%]">
+                            Usamos las metodologías ágiles para poder gestionar losproyectos de forma ordenada, autónoma y eficaz.                   
+                        </p>
+                    </div>
+
+                </section>
+            </section>
+        </div>
+        <Tecnologies />
+	</section>
+</Layout>
+
