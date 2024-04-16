@@ -1,14 +1,14 @@
 ---
 import NoImageLogo from '../utils/icon/logo.png'
-interface Props {
+interface Props {  //Interface que define las propiedades a recibir
 	name: string;
 	image: string;
 	text: string;
 }
 
-const { name, image, text } = Astro.props;
+const { name, image, text } = Astro.props; //Se cargan las constantes con las propiedades recibidas
 ---
-
+<!-- Contenedor con efecto hover para dar animación cuando el cursor se posicione dentro -->
 <section class="flex flex-col md:flex-row rounded-2xl hover:border-[2px] hover:border-white">
     <div class="w-[280px] h-[320px] bg-[#75B4A8] rounded-l-2xl flex items-center justify-center">
         <div class="flex flex-col items-center justify-center gap-6">

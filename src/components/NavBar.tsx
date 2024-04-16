@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NavBar=()=>{
+const NavBar=()=>{  //Navbar recibe por propiedades los títulos de las secciones mas la url a donde nos dirige
     const [navOptions, setNavOptions] = useState([
         {title:"Inicio",isActive:true,url:''},
 		{title:"Nosotros",isActive:false,url:'about'},
@@ -9,6 +9,7 @@ const NavBar=()=>{
 		{title:"Contacto",isActive:false,url:'contact'}
     ] )
 
+    //Funcion para cambiar el stilo de la opcion seleccionada en el navbar
     const setActive=(id:number)=>{
         const newItems= navOptions.map( item=>{ return {title:item.title,isActive:false,url:item.url}})
         newItems[id].isActive= true
@@ -17,6 +18,7 @@ const NavBar=()=>{
   
     return(
         <section className="md:w-full flex flex-col overflow-x-auto md:flex-row justify-normal overflow-hidden md:max-w-[900px] md:h-[60px] rounded-xl mx-auto">
+           {/* Con el map iteramos cada opcion que recibimos por props y creamos el navabar */}
             {navOptions.map( (item,index,array)=>{
             return(
                 <a 

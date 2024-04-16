@@ -2,13 +2,14 @@
 import ReviewCard from '../components/ReviewCard.astro';
 import Layout from '../layouts/Layout.astro';
 ---
-
+<!-- Página de reseñas -->
 <Layout title="Welcome to Astro.">
 	<section class="w-full min-h-[80%] py-10 px-10 overflow-y-auto flex flex-col md:flex-row md:flex-wrap gap-[100px] justify-center items-center">
             <p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold">
                 Reseñas
             </p>
             <section class="bg-opacity-75 flex flex-col gap-8 p-[25px] rounded-3xl text-[24px] text-white max-w-[800px] font-bold">
+              <!-- Se llama el componente ReviewCard que recibe por props el texto y la imagen a mostrar -->
               <ReviewCard  
                 name='Hernan Soto' 
                 image='https://mir-s3-cdn-cf.behance.net/project_modules/1400/d4ad40103067131.5f450dd53ccd1.png' 
