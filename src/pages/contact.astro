@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-
-<Layout title="Welcome to Astro.">
+<!-- Pagina de contacto -->
+<Layout title="ElevenSoft">
 	<section class="w-full min-h-[80%] py-10 px-10 overflow-y-auto flex flex-col md:flex-row md:flex-wrap gap-[100px] justify-center items-center">
             <p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold">
                 Contacto
@@ -16,16 +16,20 @@ import Layout from '../layouts/Layout.astro';
                     </p>
                     <div class="flex flex-col md:flex-row gap-2">
                         <label for="name" class="w-[20%]">Nombre:</label>
+                        <!-- Input para capturar el nombre ingresado -->
                         <input type="text" name="name" id="name" class="md:w-full text-black rounded-3xl px-3">
                     </div>
                     <div class="flex flex-col md:flex-row gap-2">
                         <label for="email" class="w-[20%]">Correo:</label>
+                        <!-- Input para capturar el correo ingresado -->
                         <input type="text" name="email" id="email" class="md:w-full text-black rounded-3xl px-3">
                     </div>
                     <p>Cuéntanos un poco de tu proyecto y cómo
                         te podemos ayudar
                     </p>
+                    <!-- Input para capturar los detalles -->
                     <textarea class="text-black rounded-3xl p-4 h-[200px]"/>
+                    <!-- Boton de tipo submit para ejecutar un llamado al completar el formulario -->
                     <button type="submit" class="bg-[#75B4A8] hover:bg-white hover:text-[#75B4A8] rounded-2xl h-[50px] w-[90%] md:w-[50%] self-center">
                         Enviar
                     </button>

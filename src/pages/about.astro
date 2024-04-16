@@ -1,12 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-
-<Layout title="Welcome to Astro.">
+<!-- Página Sobre nosotros -->
+<Layout title="ElevenSoft">
+	<!-- Contenedor con flex en fila para vista en pantalla grande y en columna para versión mobile -->
 	<section class="w-full h-[80%] py-10 px-10 overflow-y-auto flex flex-col md:flex-row gap-[100px] justify-center items-center">
+		<!-- Parrafo que ocupa la parte izq de la pantalla -->
 		<p class="md:w-[30%] text-[32px] md:text-[64px] text-white font-bold bg-re">
 			¿Quiénes somos? 
 		</p>
+		<!-- contenedor que ocupa la parte derecha -->
 		<div class="text-[24px] md:w-[40%] max-w-[800px] max-h-[700px] overflow-y-auto font-bold text-white bg-black opacity-75 p-[25px] md:p-[56px] rounded-2xl">
 			Somos una firma líder en el desarrollo de software, comprometida con la 
 			excelencia y la innovación. 
