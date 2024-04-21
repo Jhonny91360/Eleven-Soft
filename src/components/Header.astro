@@ -1,5 +1,5 @@
 ---
-import LoginTag from "./LoginTag.astro";
+import LoginTag from "./LoginTag";
 import NavBar from "./NavBar";
 import ElevensoftLogo from '../utils/icon/logo.png'
 ---
@@ -11,5 +11,5 @@ import ElevensoftLogo from '../utils/icon/logo.png'
 		client:visible
 	>
 	</NavBar>
-    <LoginTag />
-</section>
+    <LoginTag client:only />
+</section>./LoginTag.tsx

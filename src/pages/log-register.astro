@@ -1,0 +1,22 @@
+---
+import FormLogRegister from "../components/Form-Login-Register";
+import Layout from '../layouts/Layout.astro';
+---
+<!-- Componente Login - Registro -->
+<Layout title="ElevenSoft"> 
+	<section class="w-full h-[80%] overflow-y-auto flex flex-col md:flex-row justify-center items-center md:justify-start px-10 py-10">
+        <!-- Ocupa la mitad de pantalla y se justifica al inicio (izq) -->
+        <section class="md:w-[50%] my-auto flex  flex-col items-center justify-center gap-[67px]">
+            <p class="text-[24px] text-center text-white md:text-[64px] font-bold ">
+             Diseño y Desarrollo <br>
+             de software
+            </p>
+            
+        </section>
+        <FormLogRegister 
+        client:only
+        transition:persist
+        />
+    </section>
+
+</Layout>
