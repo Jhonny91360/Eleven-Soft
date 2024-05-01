@@ -16,6 +16,15 @@ Users.push(
         type: "admin"
     }
 )
+//Creamos un usuario de prueba
+Users.push(
+    {
+        name:"Poli",
+        correo: "politecnico@gmail.com",
+        password: "poli",
+        type: "user"
+    }
+)
 
 export const addUser=(user:User)=>{
     const userExists= Users.find( userbdd=> userbdd.correo===user.correo)
